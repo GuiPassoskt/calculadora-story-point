@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/calculator.css">
+</head>
+
+<body>
+  <section class="wrapper">
+    <h1>Calculadora de Story Point</h1>
+    <div class="questions">
+      <div class="question">
+        <h3>
+          <span class="question-marker">1</span>
+          Dependências
+        </h3>
+        <div class="question-options-container">
+          <p>Esse recurso depende de outras histórias ou épicos que estão abertos ou em andamento?</p>
+          <div class="choices">
+            Nenhum <input type="radio" onchange="cleanCalculate()" name="dependencia" value="low" checked>
+            Algumas <input type="radio" onchange="cleanCalculate()" name="dependencia" value="mid">
+            Muitas <input type="radio" onchange="cleanCalculate()" name="dependencia" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          <span class="question-marker">2</span>
+          Conhecimento
+        </h3>
+        <div class="question-options-container">
+          <p>Qual é a familiaridade do desenvolvedor com os requisitos e o contexto da história?</p>
+          <div class="choices">
+            Nenhuma <input type="radio" onchange="cleanCalculate()" name="conhecimento" value="low" checked>
+            Alguma <input type="radio" onchange="cleanCalculate()" name="conhecimento" value="mid">
+            Conhece <input type="radio" onchange="cleanCalculate()" name="conhecimento" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          <span class="question-marker">3</span>
+          Repetição
+        </h3>
+        <div class="question-options-container">
+          <p>Com que frequência o desenvolvedor realizou uma história semelhante no passado?</p>
+          <div class="choices">
+            Nunca <input type="radio" onchange="cleanCalculate()" name="repeticao" value="low" checked>
+            Algumas <input type="radio" onchange="cleanCalculate()" name="repeticao" value="mid">
+            Muitas <input type="radio" onchange="cleanCalculate()" name="repeticao" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          <span class="question-marker">4</span>
+          Complexidade
+        </h3>
+        <div class="question-options-container">
+          <p>Até que ponto a história é desafiadora ou complexa de ser concluída?</p>
+          <div class="choices">
+            Fácil <input type="radio" onchange="cleanCalculate()" name="complexidade" value="low" checked>
+            Médio <input type="radio" onchange="cleanCalculate()" name="complexidade" value="mid">
+            Dificil <input type="radio" onchange="cleanCalculate()" name="complexidade" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          <span class="question-marker">5</span>
+          Risco
+        </h3>
+        <div class="question-options-container">
+          <p>Qual é o nível de riscos potenciais associados à conclusão da história?</p>
+          <div class="choices">
+            Baixo <input type="radio" onchange="cleanCalculate()" name="risco" value="low" checked>
+            Médio <input type="radio" onchange="cleanCalculate()" name="risco" value="mid">
+            Alto <input type="radio" onchange="cleanCalculate()" name="risco" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          <span class="question-marker">6</span>
+          Duração
+        </h3>
+        <div class="question-options-container">
+          <p>Qual é o prazo esperado para concluir a história?</p>
+          <div class="choices">
+            Minutos <input type="radio" onchange="cleanCalculate()" name="duracao" value="low" checked>
+            Horas <input type="radio" onchange="cleanCalculate()" name="duracao" value="mid">
+            Dias <input type="radio" onchange="cleanCalculate()" name="duracao" value="high">
+          </div>
+        </div>
+      </div>
+      <div class="finish-actions">
+        <div>
+          <strong id="points"></strong>
+          <p id="variacao"></p>
+        </div>
+        <button class="easy-button" id="calcular">Calcular</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../app/models/Calculator.js"></script>
+  <script src="../app/services/CalculatorService.js"></script>
+  <script src="../app/controllers/CalculatorController.js"></script>
+  <script src="../app/modules/calculatorModule.js"></script>
+</body>
+
+</html>
