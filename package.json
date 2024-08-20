@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-story-point",
+  "version": "1.0.0",
+  "description": "Calculadora de ponto de função, para auxiliar na estimativa de pontos de uma task (Scrum)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

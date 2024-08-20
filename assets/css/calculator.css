@@ -1,0 +1,292 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+main.home {
+  padding-right: 0;
+}
+
+h1.section-header {
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+p.paragraph {
+  font-size: 16px;
+  margin-bottom: 75px;
+  margin-top: 0;
+  max-width: 800px;
+  text-align: center;
+}
+
+.top-section {
+  background-color: #fbfbfb;
+  margin-bottom: 70px;
+  padding-bottom: 2em;
+}
+
+.section {
+  color: #333;
+  display: block;
+  font-size: 18px;
+  line-height: 2em;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.section.first-section {
+  margin-top: 104px;
+}
+
+.section .home-button {
+  font-size: 20px;
+  height: auto;
+  line-height: 22px;
+  padding: 8px 16px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h2.section-header {
+  font-size: 1.5em;
+  margin: 25px auto;
+}
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    width: auto;
+  }
+}
+
+ul {
+  display: block;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 0;
+}
+
+li {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0 0 0 30px;
+}
+
+li strong {
+  font-size: inherit;
+}
+
+.wrapper {
+  max-width: 800px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.questions {
+  background: #fff;
+  border: 2px solid #145cf2;
+  border-radius: 6px;
+  margin: 32px 0;
+  padding: 20px;
+}
+
+@media (max-width: 816px) {
+  .questions {
+    margin: 32px 8px;
+  }
+}
+
+.questions h3 {
+  margin: 36px 0 0;
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.question + .question {
+  margin-top: 20px;
+}
+
+.question h3 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.question .question-marker {
+  align-items: center;
+  background: #dce3f1;
+  border-radius: 50%;
+  color: #5e5e71;
+  display: block;
+  display: flex;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.question .question-options-container {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .question .question-options-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.question p {
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+}
+
+.question .choices {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .question .choices {
+    flex-wrap: wrap;
+  }
+}
+
+.question .choice {
+  background: transparent;
+  border: 1px solid #145cf2;
+  border-radius: 18px;
+  color: #145cf2;
+  font-size: 16px;
+  margin: 0;
+  padding: 4px 12px;
+  transition: all 0.15s;
+}
+
+.question .choice.selected {
+  background: #145cf2;
+  color: #fff;
+}
+
+.finish-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.finish-actions .easy-button {
+  align-items: center;
+  font-size: 16px;
+  height: 52px;
+  margin: 0 0 0 auto;
+  padding: 12px 24px;
+}
+
+.finish-actions h3 {
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.finish-actions h3 span {
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+@media (max-width: 470px) {
+  .finish-actions {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .finish-actions .easy-button {
+    margin-left: 0;
+  }
+
+  .finish-actions h3 {
+    text-align: center;
+  }
+}
+
+.section-cta {
+  background: #145cf2;
+  color: #fff;
+  margin-top: 30px;
+  padding: 6em 0;
+  position: relative;
+  text-align: center;
+}
+
+.section-cta h2 {
+  display: block;
+  font-size: 1.9em;
+  margin-bottom: 1.25em;
+}
+
+.section-cta img {
+  bottom: -87px;
+  position: absolute;
+  right: 5%;
+  width: 200px;
+}
+
+@media (max-width: 1000px) {
+  .section-cta img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-cta img {
+    display: none;
+  }
+}
+
+.section-cta a {
+  font-size: 18px;
+  padding: 0.7em 1em;
+}
+
+button {
+  background-color: dimgray;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.easy-button {
+  background-color: orange;
+}
